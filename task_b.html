@@ -15,50 +15,45 @@
 <body>
 
 <main>
-    <h1 id="test">ВЕБ-ФОРМА</h1>
+    <h1 id="test">РЕГИСТРАЦИЯ</h1>
 
     <form action="form-submit.php" novalidate onsubmit="return checkForm(this);">
-        <!-- your input elements here -->
-
-        <label>Имя:</label>
-        <input type="text" name="first name" autofocus required id="firstnm"/>
-        <br>
-        <label>Фамилия:</label>
-        <input type="text" name="last name" required id="lastnm"/>
-        <br>
-        <label>E-mail:</label>
-        <input type="email" name="email" required id="email"/>
-        <br>
-        <label>Номер телефона:</label>
-        <input type="tel" name="phone number" id="phonenumber" placeholder="формат: +375 29 0123456"/>
-        <br>
-        <label>Адрес:</label>
-        <input type="text" name="address" id="address"/>
-        <br>
-        <label>Почтовый код:</label>
-        <input type="text" name="postal code"  pattern="[0-9]{6}" id="postalcode"/>
-        <br>
-        <label>Пароль:</label>
-        <input type="password" name="password" required id="password"/>
-        <br>
-        <label>Отправить:</label>
-         <input type="submit" value="ОК" id="submitbutton"/>
+      <p> * отмечены поля обязательные для ввода</p>
+      <label>Имя*:</label>
+      <br>
+      <input type="text" name="first name" autofocus required id="firstnm" />
+      <br>
+      <label>Фамилия*:</label>
+      <br>
+      <input type="text" name="last name" required id="lastnm" />
+      <br>
+      <label>E-mail*:</label>
+      <br>
+      <input type="email" name="email" required id="email" placeholder="example@gmail.com"/>
+      <br>
+      <label>Номер телефона*:</label>
+      <br>
+      <input type="tel" name="phone number" pattern="\+(?:[0-9] ?){6,14}[0-9]" id="phoneNumber" required
+        placeholder="формат: +375 29 0123456" />
+      <br>
+      <label>Адрес:</label>
+      <br>
+      <input type="text" name="address" id="address" />
+      <br>
+      <label>Почтовый код:</label>
+      <br>
+      <input type="text" name="postal code" pattern="[0-9]{6}" id="postalCode" placeholder="формат: 220000" />
+      <br>
+      <label>Пароль*:</label>
+      <br>
+      <input type="password" name="password" pattern="/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/" required id="password" />
+      <div class="ps">Пароль должен содержать по крайней мере одно число, одну заглавную и строчную латинские буквы, а также не менее 8 символов</div>
+      
+      <br>
+      <input type="submit" value="ОК" id="submitbutton" />  <!-- your input elements here -->        
     </form>
 
-    <style>
-        label{
-            display: block;
-            width: 200px;
-            float: left;
-            text-align: right;
-            margin: 10px 5px;
-            clear: left;
-        }
-        input{
-            margin: 10px 5px;
-            vertical-align: middle;
-        }
-    </style>
+
 
 </main>
 <script src="js/main.js"></script>

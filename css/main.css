@@ -1,19 +1,48 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+body
+{
+background-color: rgb(71, 69, 69);
 
+
+}
 h1{
-    margin: 10px 5px;
+  font: 25px/3 'Noto Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  transform: scalex(0.745);
+  letter-spacing: 6px;
+  margin-bottom: 0;
+  margin: 10px 0px -18px 0px;
+  color: aliceblue;
+}
+form {
+  border: 1px solid #c6c7cc;
+  border-radius: 5px;
+  font: 18px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  width: 390px;
+  margin: 0 auto;
+  background: DarkGrey;
+  
 }
 label{
     display: block;
     width: 200px;
     float: left;
-    text-align: right;
-    margin: 10px 5px;
+    text-align: left;
+    margin: 15px 0px -1px 25px;
     clear: left;
 }
 input {
-    margin: 10px 5px;
-    vertical-align: middle;
+    margin: 0px 0px -1px 15px;
+    vertical-align: sub;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px 0px -1px 15px;
 }
 
 html {
@@ -72,11 +101,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#submitbutton{
+  margin: 0px 0px 20px 15px;
+  background: #D5D5D5;
+}
+#phoneNumber{
+  font: 15px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-style: italic;
+}
+#postalCode{
+  font: 15px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-style: italic;
+}
+p{
+  font: 12px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration:underline;
+  margin: 5px 0px -12px 15px;
+  color:#008080 ;
+}
 
-
-
-
-
+.ps{
+  font-size: 10px;
+  text-align: center;
+  margin: 2px 15px;
+  font-style: italic;
+}
 
 
 
